@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <a href="home.html" class="text-blue-500 hover:underline ml-4 mt-4 block"
+      >Go back home</a
+    >
+    <div
+      id="blog"
+      class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg"
+    >
+      <h2 class="text-2xl font-bold text-gray-800 text-center mb-6">
+        Bài Viết Kinh Nghiệm với JavaScript
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="post p-4 bg-gray-50 border-l-4 border-blue-500 rounded-md">
+          <h3 class="font-semibold text-gray-700">
+            Hiểu rõ các kiểu dữ liệu trong JavaScript
+          </h3>
+          <p class="text-gray-600 mt-2 hidden">
+            JavaScript có nhiều kiểu dữ liệu, nhưng đã bao giờ bạn nhầm lẫn giữa
+            <code>null</code> và <code>undefined</code>? hai kiểu dữ liệu đặc
+            biệt trong JavaScript, thường được sử dụng để biểu thị trạng thái
+            "không có giá trị" hoặc "thiếu dữ liệu". Tuy nhiên, chúng có sự khác
+            biệt rõ ràng về mục đích và cách sử dụng.
+          </p>
+          <button class="toggle-content text-blue-500 hover:underline mt-2">
+            Xem thêm
+          </button>
+        </div>
+        <div class="post p-4 bg-gray-50 border-l-4 border-green-500 rounded-md">
+          <h3 class="font-semibold text-gray-700">
+            Tầm quan trọng của <code>this</code> trong JavaScript
+          </h3>
+          <p class="text-gray-600 mt-2 hidden">
+            <code>this</code> là một trong những khái niệm dễ nhầm lẫn nhất. Sử
+            dụng arrow function có thể giúp kiểm soát tốt hơn ngữ cảnh của
+            <code>this</code>.
+          </p>
+          <button class="toggle-content text-blue-500 hover:underline mt-2">
+            Xem thêm
+          </button>
+        </div>
+        <div
+          class="post p-4 bg-gray-50 border-l-4 border-yellow-500 rounded-md"
+        >
+          <h3 class="font-semibold text-gray-700">
+            Khi nào nên dùng <code>let</code>, <code>const</code>, hay
+            <code>var</code>?
+          </h3>
+          <p class="text-gray-600 mt-2 hidden">
+            Ưu tiên sử dụng <code>let</code> và <code>const</code> để giúp code
+            rõ ràng và tránh lỗi phạm vi biến không mong muốn.
+          </p>
+          <button class="toggle-content text-blue-500 hover:underline mt-2">
+            Xem thêm
+          </button>
+        </div>
+        <div class="post p-4 bg-gray-50 border-l-4 border-red-500 rounded-md">
+          <h3 class="font-semibold text-gray-700">
+            Làm việc hiệu quả với Promise và async/await
+          </h3>
+          <p class="text-gray-600 mt-2 hidden">
+            Giải quyết callback hell bằng cách sử dụng Promise hoặc async/await.
+            Đừng quên xử lý lỗi với <code>try...catch</code>.
+          </p>
+          <button class="toggle-content text-blue-500 hover:underline mt-2">
+            Xem thêm
+          </button>
+        </div>
+        <div
+          class="post p-4 bg-gray-50 border-l-4 border-purple-500 rounded-md"
+        >
+          <h3 class="font-semibold text-gray-700">
+            Sử dụng các thư viện JavaScript một cách hợp lý
+          </h3>
+          <p class="text-gray-600 mt-2 hidden">
+            Thư viện như Lodash hay Moment.js rất mạnh, nhưng hãy cân nhắc khi
+            thêm chúng vào dự án. Liệu chúng có thực sự cần thiết? Thay vào đó,
+            hãy kiểm tra xem ES6+ đã hỗ trợ tính năng tương tự hay chưa.
+          </p>
+          <button class="toggle-content text-blue-500 hover:underline mt-2">
+            Xem thêm
+          </button>
+        </div>
+        <div class="post p-4 bg-gray-50 border-l-4 border-teal-500 rounded-md">
+          <h3 class="font-semibold text-gray-700">
+            Debug JavaScript với DevTools
+          </h3>
+          <p class="text-gray-600 mt-2 hidden">
+            DevTools của trình duyệt là công cụ mạnh mẽ mà bạn nên thành thạo.
+            Đặt breakpoint, theo dõi giá trị biến, kiểm tra hiệu năng – tất cả
+            đều có thể làm trong DevTools. Hãy dành thời gian tìm hiểu và tận
+            dụng tối đa.
+          </p>
+          <button class="toggle-content text-blue-500 hover:underline mt-2">
+            Xem thêm
+          </button>
+        </div>
+        <div
+          class="post p-4 bg-gray-50 border-l-4 border-indigo-500 rounded-md"
+        >
+          <h3 class="font-semibold text-gray-700">
+            Viết code JavaScript dễ bảo trì
+          </h3>
+          <p class="text-gray-600 mt-2 hidden">
+            Code đẹp không chỉ để máy đọc, mà còn cho đồng đội của bạn. Hãy đặt
+            tên biến rõ ràng, chia nhỏ chức năng, và tuân thủ các quy tắc code
+            style. Một codebase dễ bảo trì là chìa khóa của thành công dài hạn.
+          </p>
+          <button class="toggle-content text-blue-500 hover:underline mt-2">
+            Xem thêm
+          </button>
+        </div>
+        <div class="post p-4 bg-gray-50 border-l-4 border-pink-500 rounded-md">
+          <h3 class="font-semibold text-gray-700">
+            Hiệu năng trong JavaScript - Bí quyết tối ưu hóa
+          </h3>
+          <p class="text-gray-600 mt-2 hidden">
+            Bạn đã từng gặp vấn đề với DOM manipulation chậm chạp chưa? Hãy thử
+            sử dụng Virtual DOM hoặc debounce/throttle các sự kiện. Tối ưu hóa
+            hiệu năng là điều quan trọng trong các ứng dụng lớn.
+          </p>
+          <button class="toggle-content text-blue-500 hover:underline mt-2">
+            Xem thêm
+          </button>
+        </div>
+        <div
+          class="post p-4 bg-gray-50 border-l-4 border-orange-500 rounded-md"
+        >
+          <h3 class="font-semibold text-gray-700">
+            Không ngừng học hỏi với JavaScript
+          </h3>
+          <p class="text-gray-600 mt-2 hidden">
+            JavaScript không ngừng phát triển, và bạn cũng vậy! Đừng ngần ngại
+            học các framework mới, tìm hiểu những cải tiến của ngôn ngữ, và tham
+            gia cộng đồng. Điều này không chỉ giúp bạn giỏi hơn mà còn mở ra
+            nhiều cơ hội mới.
+          </p>
+          <button class="toggle-content text-blue-500 hover:underline mt-2">
+            Xem thêm
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll(".toggle-content").forEach((button) => {
+        button.addEventListener("click", () => {
+          const content = button.previousElementSibling;
+          if (content.classList.contains("hidden")) {
+            content.classList.remove("hidden");
+            button.textContent = "Thu gọn";
+          } else {
+            content.classList.add("hidden");
+            button.textContent = "Xem thêm";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

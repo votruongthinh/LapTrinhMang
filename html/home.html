@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex">
+            <div class="shrink-0 flex items-center">
+              <span class="text-3xl font-bold text-blue-600">My Portfolio</span>
+            </div>
+            <div class="hidden sm:flex sm:space-x-8 ml-10">
+              <a
+                href="#"
+                class="text-blue-600 text-2xl inline-flex items-center px-1 pt-1 border-b-2 border-blue-500 text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="profile.html"
+                class="text-gray-500 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium hover:text-gray-700 hover:border-gray-300"
+                >Profile</a
+              >
+              <a
+                href="blog.html"
+                class="text-gray-500 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium hover:text-gray-700 hover:border-gray-300"
+                >Blog</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Section with Background Image -->
+    <div
+      class="relative bg-cover bg-center h-screen"
+      style="
+        background-image: url('https://source.unsplash.com/1600x900/?nature,technology');
+      "
+    >
+      <div class="absolute inset-0 bg-[#4583AA] opacity-40"></div>
+      <div class="relative z-10 max-w-4xl mx-auto p-8 text-center text-white">
+        <h1 class="text-4xl font-bold mb-4 animate__animated animate__fadeIn">
+          Welcome to My Portfolio
+        </h1>
+        <p
+          class="text-lg font-light mb-6 animate__animated animate__fadeIn animate__delay-1s"
+        >
+          Khám phá các trang Profile và Blog để tìm hiểu thêm về kinh nghiệm và
+          kỹ năng của tôi!
+        </p>
+        <a
+          href="profile.html"
+          class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300"
+          >Xem Hồ Sơ</a
+        >
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
