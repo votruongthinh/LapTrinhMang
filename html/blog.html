@@ -7,9 +7,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <a href="home.html" class="text-blue-500 hover:underline ml-4 mt-4 block"
-      >Go back home</a
-    >
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-white text-lg font-semibold">My Blog</a>
+        <ul class="flex space-x-4">
+          <li>
+            <a href="./home.html" class="text-gray-300 hover:text-white"
+              >Home</a
+            >
+          </li>
+          <li><a href="#" class="text-gray-300 hover:text-white">About</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white">Posts</a></li>
+          <li>
+            <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div
       id="blog"
       class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg"
@@ -19,6 +33,7 @@
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="post p-4 bg-gray-50 border-l-4 border-blue-500 rounded-md">
+          <img src="../img/js.png" alt="" class="w-full h-auto mb-4" />
           <h3 class="font-semibold text-gray-700">
             Hiểu rõ các kiểu dữ liệu trong JavaScript
           </h3>
@@ -34,6 +49,7 @@
           </button>
         </div>
         <div class="post p-4 bg-gray-50 border-l-4 border-green-500 rounded-md">
+          <img src="../img/js.png" alt="" class="w-full h-auto mb-4" />
           <h3 class="font-semibold text-gray-700">
             Tầm quan trọng của <code>this</code> trong JavaScript
           </h3>
@@ -49,6 +65,7 @@
         <div
           class="post p-4 bg-gray-50 border-l-4 border-yellow-500 rounded-md"
         >
+          <img src="../img/js.png" alt="" class="w-full h-auto mb-4" />
           <h3 class="font-semibold text-gray-700">
             Khi nào nên dùng <code>let</code>, <code>const</code>, hay
             <code>var</code>?
@@ -62,6 +79,7 @@
           </button>
         </div>
         <div class="post p-4 bg-gray-50 border-l-4 border-red-500 rounded-md">
+          <img src="../img/js.png" alt="" class="w-full h-auto mb-4" />
           <h3 class="font-semibold text-gray-700">
             Làm việc hiệu quả với Promise và async/await
           </h3>
@@ -76,6 +94,7 @@
         <div
           class="post p-4 bg-gray-50 border-l-4 border-purple-500 rounded-md"
         >
+          <img src="../img/js.png" alt="" class="w-full h-auto mb-4" />
           <h3 class="font-semibold text-gray-700">
             Sử dụng các thư viện JavaScript một cách hợp lý
           </h3>
@@ -89,6 +108,7 @@
           </button>
         </div>
         <div class="post p-4 bg-gray-50 border-l-4 border-teal-500 rounded-md">
+          <img src="../img/js.png" alt="" class="w-full h-auto mb-4" />
           <h3 class="font-semibold text-gray-700">
             Debug JavaScript với DevTools
           </h3>
@@ -105,6 +125,7 @@
         <div
           class="post p-4 bg-gray-50 border-l-4 border-indigo-500 rounded-md"
         >
+          <img src="../img/js.png" alt="" class="w-full h-auto mb-4" />
           <h3 class="font-semibold text-gray-700">
             Viết code JavaScript dễ bảo trì
           </h3>
@@ -118,6 +139,7 @@
           </button>
         </div>
         <div class="post p-4 bg-gray-50 border-l-4 border-pink-500 rounded-md">
+          <img src="../img/js.png" alt="" class="w-full h-auto mb-4" />
           <h3 class="font-semibold text-gray-700">
             Hiệu năng trong JavaScript - Bí quyết tối ưu hóa
           </h3>
@@ -133,6 +155,7 @@
         <div
           class="post p-4 bg-gray-50 border-l-4 border-orange-500 rounded-md"
         >
+          <img src="../img/js.png" alt="" class="w-full h-auto mb-4" />
           <h3 class="font-semibold text-gray-700">
             Không ngừng học hỏi với JavaScript
           </h3>
@@ -141,6 +164,60 @@
             học các framework mới, tìm hiểu những cải tiến của ngôn ngữ, và tham
             gia cộng đồng. Điều này không chỉ giúp bạn giỏi hơn mà còn mở ra
             nhiều cơ hội mới.
+          </p>
+          <button class="toggle-content text-blue-500 hover:underline mt-2">
+            Xem thêm
+          </button>
+        </div>
+        <div
+          class="post p-4 bg-gray-50 border-l-4 border-orange-500 rounded-md"
+        >
+          <img src="../img/java.png" alt="" class="w-full h-auto mb-4" />
+          <h3 class="font-semibold text-gray-700">Giới thiệu cơ bản về Java</h3>
+          <p class="text-gray-600 mt-2 hidden">
+            Java là một ngôn ngữ lập trình mạnh mẽ và phổ biến, được sử dụng
+            rộng rãi trong phát triển ứng dụng doanh nghiệp, web, mobile, và hệ
+            thống nhúng. Được phát triển bởi Sun Microsystems vào năm 1995 và
+            hiện thuộc sở hữu của Oracle, Java nổi bật nhờ tính ổn định, hiệu
+            suất cao, và khả năng tương thích đa nền tảng ("Write Once, Run
+            Anywhere").
+          </p>
+          <button class="toggle-content text-blue-500 hover:underline mt-2">
+            Xem thêm
+          </button>
+        </div>
+        <div
+          class="post p-4 bg-gray-50 border-l-4 border-orange-500 rounded-md"
+        >
+          <img src="../img/java.png" alt="" class="w-full h-auto mb-4" />
+          <h3 class="font-semibold text-gray-700">
+            Các tính năng nổi bật của Java
+          </h3>
+          <p class="text-gray-600 mt-2 hidden">
+            Java nổi bật với khả năng hướng đối tượng, đa nền tảng, bảo mật cao
+            và hệ sinh thái thư viện phong phú. Các ứng dụng phổ biến của Java
+            bao gồm Android, các hệ thống doanh nghiệp, và ứng dụng web lớn như
+            LinkedIn, Amazon. Khám phá sức mạnh của Java ngay!
+          </p>
+          <button class="toggle-content text-blue-500 hover:underline mt-2">
+            Xem thêm
+          </button>
+        </div>
+        <div
+          class="post p-4 bg-gray-50 border-l-4 border-orange-500 rounded-md"
+        >
+          <img src="../img/java.png" alt="" class="w-full h-auto mb-4" />
+          <h3 class="font-semibold text-gray-700">
+            Các thư viện phổ biến trong Java
+          </h3>
+          <p class="text-gray-600 mt-2 hidden">
+            Java có nhiều thư viện mạnh mẽ hỗ trợ lập trình viên: -
+            **SpringFramework**: Hỗ trợ phát triển ứng dụng doanh nghiệp và web
+            -**Hibernate**: Giúp thao tác với cơ sở dữ liệu dễ dàng hơn bằng
+            cách ánh xạ giữa Java và bảng dữ liệu. -**Apache Commons**: Bộ công
+            cụ tiện ích cho các tác vụ như xử lý chuỗi, file, và nhiều hơn nữa.
+            Sử dụng các thư viện này sẽ giúp bạn tiết kiệm thời gian và nâng cao
+            chất lượng dự án.
           </p>
           <button class="toggle-content text-blue-500 hover:underline mt-2">
             Xem thêm

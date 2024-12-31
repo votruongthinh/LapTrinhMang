@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body class="bg-gray-50 font-sans">
     <!-- Navbar -->
@@ -13,7 +17,9 @@
         <div class="flex justify-between h-16 items-center">
           <div class="flex">
             <div class="shrink-0 flex items-center">
-              <span class="text-3xl font-bold text-blue-600">My Portfolio</span>
+              <span class="text-3xl font-bold text-blue-600"
+                >VÕ TRƯỜNG THỊNH</span
+              >
             </div>
             <div class="hidden sm:flex sm:space-x-8 ml-10">
               <a
@@ -38,33 +44,276 @@
     </nav>
 
     <!-- Main Content Section with Background Image -->
-    <div
-      class="relative bg-cover bg-center h-screen"
+    <!-- <div
+      class="relative bg-cover bg-center h-screen flex items-center justify-center"
       style="
         background-image: url('https://source.unsplash.com/1600x900/?nature,technology');
       "
     >
-      <div class="absolute inset-0 bg-[#4583AA] opacity-40"></div>
+      <div class="absolute inset-0 bg-[#4583AA] opacity-50"></div>
       <div class="relative z-10 max-w-4xl mx-auto p-8 text-center text-white">
-        <h1 class="text-4xl font-bold mb-4 animate__animated animate__fadeIn">
+        <h1
+          class="text-5xl font-extrabold mb-6 animate__animated animate__fadeInDown"
+        >
           Welcome to My Portfolio
         </h1>
         <p
-          class="text-lg font-light mb-6 animate__animated animate__fadeIn animate__delay-1s"
+          class="text-xl font-light mb-8 animate__animated animate__fadeIn animate__delay-1s"
         >
           Khám phá các trang Profile và Blog để tìm hiểu thêm về kinh nghiệm và
           kỹ năng của tôi!
         </p>
         <a
           href="profile.html"
-          class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300"
-          >Xem Hồ Sơ</a
+          class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 animate__animated animate__fadeInUp animate__delay-2s"
         >
+          Xem Hồ Sơ
+        </a>
       </div>
-    </div>
+    </div> -->
+    <section id="showcase" class="py-24">
+      <div class="container mx-auto">
+        <!-- Showcase About -->
+        <div class="text-center">
+          <p class="text-gray-500">OUR PORTFOLIO</p>
+          <h2 class="text-4xl font-light uppercase my-3">Work showcase</h2>
+          <p class="text-gray-500 font-semibold max-w-2xl mx-auto">
+            We are committed to providing our customers with exceptional service
+            while offering our employees the best training. Programing language
+          </p>
+        </div>
+        <!-- Showcase Content -->
+        <div class="flex flex-wrap gap-5 mt-12">
+          <!-- Showcase Item -->
+          <div class="w-full md:w-[calc((100%-40px)/3)] relative group">
+            <img
+              src="../img/logojs.webp"
+              alt=""
+              class="w-full filter grayscale"
+            />
+            <div
+              class="absolute inset-0 bg-red-500 bg-opacity-50 opacity-0 transition-opacity duration-300 flex flex-col justify-between p-4 group-hover:opacity-100"
+            >
+              <div class="flex justify-end">
+                <a
+                  href=""
+                  data-fancybox="gallery"
+                  data-caption="Hình cái chai"
+                  class="w-10 h-10 bg-white flex justify-center items-center transition-transform duration-500 transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 hover:bg-black hover:text-white"
+                >
+                  <i class="fa-solid fa-magnifying-glass-plus text-black"></i>
+                </a>
+              </div>
+              <div
+                class="transform translate-y-10 opacity-0 transition-transform duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-gray-500 uppercase">Logo</p>
+                <p class="text-white text-xl font-semibold uppercase">
+                  Flippin bird
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Additional Items -->
+          <div class="w-full md:w-[calc((100%-40px)/3)] relative group">
+            <img
+              src="../img/react-js.jpg"
+              alt=""
+              class="w-full filter grayscale"
+            />
+            <div
+              class="absolute inset-0 bg-red-500 bg-opacity-50 opacity-0 transition-opacity duration-300 flex flex-col justify-between p-4 group-hover:opacity-100"
+            >
+              <div class="flex justify-end">
+                <a
+                  href=""
+                  data-fancybox="gallery"
+                  data-caption="Hình cái chai"
+                  class="w-10 h-10 bg-white flex justify-center items-center transition-transform duration-500 transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 hover:bg-black hover:text-white"
+                >
+                  <i class="fa-solid fa-magnifying-glass-plus text-black"></i>
+                </a>
+              </div>
+              <div
+                class="transform translate-y-10 opacity-0 transition-transform duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-gray-500 uppercase">Logo</p>
+                <p class="text-white text-xl font-semibold uppercase">
+                  Flippin bird
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-[calc((100%-40px)/3)] relative group">
+            <img
+              src="../img/nodejs.jpg"
+              alt=""
+              class="w-full filter grayscale"
+            />
+            <div
+              class="absolute inset-0 bg-red-500 bg-opacity-50 opacity-0 transition-opacity duration-300 flex flex-col justify-between p-4 group-hover:opacity-100"
+            >
+              <div class="flex justify-end">
+                <a
+                  href=""
+                  data-fancybox="gallery"
+                  data-caption="Hình cái chai"
+                  class="w-10 h-10 bg-white flex justify-center items-center transition-transform duration-500 transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 hover:bg-black hover:text-white"
+                >
+                  <i class="fa-solid fa-magnifying-glass-plus text-black"></i>
+                </a>
+              </div>
+              <div
+                class="transform translate-y-10 opacity-0 transition-transform duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-gray-500 uppercase">Logo</p>
+                <p class="text-white text-xl font-semibold uppercase">
+                  Flippin bird
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-[calc((100%-40px)/3)] relative group">
+            <img src="../img/c.jpg" alt="" class="w-full filter grayscale" />
+            <div
+              class="absolute inset-0 bg-red-500 bg-opacity-50 opacity-0 transition-opacity duration-300 flex flex-col justify-between p-4 group-hover:opacity-100"
+            >
+              <div class="flex justify-end">
+                <a
+                  href=""
+                  data-fancybox="gallery"
+                  data-caption="Hình cái chai"
+                  class="w-10 h-10 bg-white flex justify-center items-center transition-transform duration-500 transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 hover:bg-black hover:text-white"
+                >
+                  <i class="fa-solid fa-magnifying-glass-plus text-black"></i>
+                </a>
+              </div>
+              <div
+                class="transform translate-y-10 opacity-0 transition-transform duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-gray-500 uppercase">Logo</p>
+                <p class="text-white text-xl font-semibold uppercase">
+                  Flippin bird
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-[calc((100%-40px)/3)] relative group">
+            <img src="../img/java.png" alt="" class="w-full filter grayscale" />
+            <div
+              class="absolute inset-0 bg-red-500 bg-opacity-50 opacity-0 transition-opacity duration-300 flex flex-col justify-between p-4 group-hover:opacity-100"
+            >
+              <div class="flex justify-end">
+                <a
+                  href=""
+                  data-fancybox="gallery"
+                  data-caption="Hình cái chai"
+                  class="w-10 h-10 bg-white flex justify-center items-center transition-transform duration-500 transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 hover:bg-black hover:text-white"
+                >
+                  <i class="fa-solid fa-magnifying-glass-plus text-black"></i>
+                </a>
+              </div>
+              <div
+                class="transform translate-y-10 opacity-0 transition-transform duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-gray-500 uppercase">Logo</p>
+                <p class="text-white text-xl font-semibold uppercase">
+                  Flippin bird
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-[calc((100%-40px)/3)] relative group">
+            <img
+              src="../img/python-programming-language.webp"
+              alt=""
+              class="w-full filter grayscale"
+            />
+            <div
+              class="absolute inset-0 bg-red-500 bg-opacity-50 opacity-0 transition-opacity duration-300 flex flex-col justify-between p-4 group-hover:opacity-100"
+            >
+              <div class="flex justify-end">
+                <a
+                  href=""
+                  data-fancybox="gallery"
+                  data-caption="Hình cái chai"
+                  class="w-10 h-10 bg-white flex justify-center items-center transition-transform duration-500 transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 hover:bg-black hover:text-white"
+                >
+                  <i class="fa-solid fa-magnifying-glass-plus text-black"></i>
+                </a>
+              </div>
+              <div
+                class="transform translate-y-10 opacity-0 transition-transform duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-gray-500 uppercase">Logo</p>
+                <p class="text-white text-xl font-semibold uppercase">
+                  Flippin bird
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat for other items -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Section -->
+    <section class="bg-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="animate__animated animate__fadeInLeft">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-lg font-light mb-6">
+              Tôi là một lập trình viên đam mê với nhiều năm kinh nghiệm trong
+              việc phát triển các ứng dụng web và di động. Tôi luôn tìm kiếm cơ
+              hội để học hỏi và phát triển kỹ năng của mình.
+            </p>
+            <a
+              href="about.html"
+              class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300"
+            >
+              Tìm hiểu thêm
+            </a>
+          </div>
+          <div class="animate__animated animate__fadeInRight">
+            <img
+              src="../img/javascript-la-gi-co-vai-tro-gi-cach-bat-javascript-tren.002.jpeg"
+              alt="Profile Picture"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white text-center py-4">
+    <footer
+      class="bg-gray-800 text-white text-center py-4 mt-16 animate__animated animate__fadeInUp animate__delay-3s"
+    >
+      <div class="flex justify-center space-x-4 mb-4">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="text-white hover:text-gray-400"
+        >
+          <i class="fab fa-facebook-f text-3xl"></i>
+        </a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          class="text-white hover:text-gray-400"
+        >
+          <i class="fab fa-instagram text-3xl"></i>
+        </a>
+        <a
+          href="https://www.github.com"
+          target="_blank"
+          class="text-white hover:text-gray-400"
+        >
+          <i class="fab fa-github text-3xl"></i>
+        </a>
+      </div>
       <p>&copy; 2024 My Portfolio. All rights reserved.</p>
     </footer>
   </body>
